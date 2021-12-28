@@ -1,16 +1,8 @@
-import os
+import discord
+from discord.ext.commands import Bot
 from discord.ext import commands
+TOKEN = "OTI1MTM1MTA1MzIyNzc4Njk2.YcotNQ.VWgLYyfTNMvqDlugdm0My7nrsIM"
+BOT = Bot(command_prefix='alpha')
 
-bot = commands.Bot(command_prefix="!")
-TOKEN = os.getenv("DISCORD_TOKEN")
 
-@bot.event
-async def on_ready():
-    print(f"Logged in as {bot.user.name}({bot.user.id})")
-
-@bot.command()
-async def ping(ctx):
-    await ctx.send("pong")
-
-if __name__ == "__main__":
-    bot.run(TOKEN)
+BOT.run(TOKEN)
