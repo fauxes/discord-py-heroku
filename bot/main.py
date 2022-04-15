@@ -8,6 +8,6 @@ BOT = Bot(command_prefix='alpha')
 
 @BOT.event
 async def on_ready():
-    await BOT.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="🥚🐣"))
+    await BOT.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name="Grimescord Egg Hunt!"))
     
 BOT.run(os.getenv('DISCORD_TOKEN'))
