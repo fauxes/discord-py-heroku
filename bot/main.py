@@ -8,6 +8,6 @@ BOT = Bot(command_prefix='alpha')
 
 @BOT.event
 async def on_ready():
-    await BOT.change_presence(activity=discord.Activity(type=discord.ActivityType.Playing, name="with my sword!"))
+    await BOT.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="WarNymph radio"))
     
 BOT.run(os.getenv('DISCORD_TOKEN'))
