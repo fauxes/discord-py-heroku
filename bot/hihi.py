@@ -10,4 +10,4 @@ BOT = Bot(command_prefix='alpha')
 async def on_ready():
     await BOT.change_presence(activity=discord.Game(name="Cyberpunk 2077"))
     
-BOT.run(os.getenv('DISCORDTOKEN'))
+BOT.run(os.getenv('LMAO'))
